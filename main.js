@@ -59,8 +59,13 @@ thirdArithNum = parseInt(thirdArithNum);
 let arithMeanNum = (firstArithNum + secondArithNum + thirdArithNum) / 3;
 alert("It's" + " " + arithMeanNum);
 
-// 5. Не понял как сделать через пробел
-let fiveDigNum = prompt("Type the 5-digital number:");
-for (let char of fiveDigNum) {
-  alert(char);
-}
+// 5. Я ВСЁ ПОНЯЛ! ахахах
+let fiveNumDigital = prompt("Type the 5-digital number:");
+
+let toString = fiveNumDigital.toString();
+
+let numArray = toString.split('');
+
+let result = numArray.join(' ');
+
+alert(result);
